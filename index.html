@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portal oficial do Agente Judiciário Digital - A fusão entre tecnologia e direito para um sistema judicial mais eficiente e humano">
     <meta name="keywords" content="AJD, inteligência artificial, direito digital, justiça, tecnologia jurídica, IA no judiciário, lawtech, legaltech">
     <meta name="author" content="Agente Judiciário Digital">
@@ -55,12 +55,10 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent; /* Remove highlight ao tocar em elementos no mobile */
         }
 
         html {
             scroll-behavior: smooth;
-            font-size: 16px;
         }
 
         body {
@@ -69,14 +67,12 @@
             color: var(--text-color);
             line-height: 1.6;
             overflow-x: hidden;
-            -webkit-text-size-adjust: 100%; /* Previne ajuste de texto no iOS */
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 var(--spacing-md);
-            width: 100%;
         }
 
         section {
@@ -89,20 +85,18 @@
             line-height: 1.2;
             margin-bottom: var(--spacing-sm);
             color: var(--text-light);
-            word-wrap: break-word; /* Quebra palavras longas */
         }
 
-        h1 { font-size: 2.5rem; }
-        h2 { font-size: 2rem; }
-        h3 { font-size: 1.5rem; color: var(--secondary-color); }
-        h4 { font-size: 1.25rem; }
-        h5 { font-size: 1.1rem; }
+        h1 { font-size: 3.5rem; }
+        h2 { font-size: 2.5rem; }
+        h3 { font-size: 1.8rem; color: var(--secondary-color); }
+        h4 { font-size: 1.5rem; }
+        h5 { font-size: 1.2rem; }
         h6 { font-size: 1rem; }
 
         p {
             margin-bottom: var(--spacing-sm);
-            font-size: 1rem;
-            word-wrap: break-word;
+            font-size: 1.1rem;
         }
 
         a {
@@ -141,14 +135,13 @@
         }
         
         .logo {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: 700;
             color: var(--text-light);
             display: flex;
             align-items: center;
             gap: var(--spacing-xs);
             transition: var(--transition);
-            padding: 0.5rem 0;
         }
         
         .logo:hover {
@@ -160,19 +153,8 @@
         }
 
         .logo i {
-            font-size: 1.2rem;
-            color: var(--secondary-color);
-        }
-
-        /* Menu mobile */
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            color: var(--text-light);
             font-size: 1.5rem;
-            cursor: pointer;
-            padding: 0.5rem;
+            color: var(--secondary-color);
         }
 
         nav ul {
@@ -180,7 +162,6 @@
             display: flex;
             flex-wrap: wrap;
             gap: var(--spacing-xs);
-            transition: var(--transition);
         }
 
         nav a {
@@ -195,11 +176,10 @@
             align-items: center;
             gap: 8px;
             font-weight: 500;
-            font-size: 0.95rem;
         }
 
         nav a i {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
         }
 
         nav a.active, nav a:hover {
@@ -212,7 +192,7 @@
         /* --- SEÇÕES DE PÁGINA --- */
         main section {
             display: none;
-            padding: var(--spacing-lg) 0;
+            padding: var(--spacing-xl) 0;
             animation: fadeIn 0.8s;
         }
 
@@ -227,14 +207,14 @@
 
         .section-title {
             text-align: center;
-            margin-bottom: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
             position: relative;
         }
         
         .section-title::after {
             content: '';
             display: block;
-            width: 60px;
+            width: 80px;
             height: 3px;
             background-color: var(--accent-color);
             margin: var(--spacing-sm) auto var(--spacing-md);
@@ -243,15 +223,15 @@
         .section-subtitle {
             text-align: center;
             max-width: 800px;
-            margin: 0 auto var(--spacing-md);
-            font-size: 1.1rem;
+            margin: 0 auto var(--spacing-lg);
+            font-size: 1.2rem;
             color: var(--text-dark);
         }
 
         /* --- PÁGINA HOME --- */
         .hero {
             text-align: center;
-            padding: var(--spacing-lg) 0;
+            padding: var(--spacing-xl) 0;
             position: relative;
             overflow: hidden;
             background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
@@ -273,7 +253,6 @@
             margin: 0 auto;
             position: relative;
             z-index: 1;
-            padding: 0 var(--spacing-sm);
         }
 
         .hero h1 {
@@ -283,7 +262,7 @@
         }
 
         .hero p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             max-width: 800px;
             margin: 0 auto var(--spacing-md);
             color: var(--text-light);
@@ -300,11 +279,11 @@
         .btn {
             background-color: var(--secondary-color);
             color: var(--text-light);
-            padding: 0.8rem 1.5rem;
+            padding: 12px 25px;
             border: none;
             border-radius: var(--border-radius);
             text-decoration: none;
-            font-size: 0.95rem;
+            font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
             transition: var(--transition);
@@ -312,12 +291,10 @@
             align-items: center;
             gap: 8px;
             box-shadow: var(--shadow-sm);
-            min-width: 120px;
-            justify-content: center;
         }
 
         .btn i {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
         }
 
         .btn:hover {
@@ -350,17 +327,17 @@
 
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--spacing-sm);
-            margin-top: var(--spacing-md);
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
         }
 
         .feature-card {
             background-color: var(--card-bg);
-            padding: var(--spacing-sm);
+            padding: var(--spacing-md);
             border-radius: var(--border-radius);
             text-align: center;
-            border-left: 4px solid var(--secondary-color);
+            border-left: 5px solid var(--secondary-color);
             transition: var(--transition);
             position: relative;
             overflow: hidden;
@@ -374,14 +351,13 @@
         }
 
         .feature-card i {
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: var(--accent-color);
-            margin-bottom: var(--spacing-xs);
+            margin-bottom: var(--spacing-sm);
         }
 
         .feature-card h3 {
             margin-bottom: var(--spacing-xs);
-            font-size: 1.2rem;
         }
 
         /* --- ABAS (CARREIRA) --- */
@@ -393,7 +369,7 @@
         .tab-buttons {
             display: flex;
             justify-content: center;
-            margin-bottom: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
             flex-wrap: wrap;
             gap: 5px;
         }
@@ -402,9 +378,9 @@
             background: rgba(255, 255, 255, 0.1);
             border: none;
             color: var(--text-color);
-            padding: 0.8rem 1rem;
+            padding: 1rem 1.5rem;
             cursor: pointer;
-            font-size: 0.95rem;
+            font-size: 1.1rem;
             border-bottom: 3px solid transparent;
             transition: var(--transition);
             border-radius: var(--border-radius) var(--border-radius) 0 0;
@@ -425,10 +401,10 @@
         .tab-content {
             display: none;
             background-color: var(--card-bg);
-            padding: var(--spacing-sm);
+            padding: var(--spacing-md);
             border-radius: 0 var(--border-radius) var(--border-radius) var(--border-radius);
             box-shadow: var(--shadow-sm);
-            border-top: 3px solid var(--secondary-color);
+            border-top: 4px solid var(--secondary-color);
         }
 
         .tab-content.active {
@@ -474,7 +450,7 @@
         }
 
         .timeline-content {
-            padding: 15px 20px;
+            padding: 20px 30px;
             background-color: var(--card-bg);
             border-radius: var(--border-radius);
             position: relative;
@@ -491,27 +467,26 @@
         .timeline-item::after {
             content: '';
             position: absolute;
-            width: 16px;
-            height: 16px;
+            width: 20px;
+            height: 20px;
             background-color: var(--bg-color);
-            border: 3px solid var(--accent-color);
-            top: 20px;
+            border: 4px solid var(--accent-color);
+            top: 25px;
             border-radius: 50%;
             z-index: 2;
         }
 
          .timeline-item:nth-child(odd)::after {
-            right: -8px;
+            right: -10px;
         }
 
         .timeline-item:nth-child(even)::after {
-            left: -8px;
+            left: -10px;
         }
 
         .timeline-content h3 { 
             margin-top: 0; 
             color: var(--accent-color);
-            font-size: 1.1rem;
         }
 
         .timeline-content span {
@@ -520,7 +495,6 @@
             display: block;
             margin-bottom: 0.5rem;
             font-family: 'Roboto Mono', monospace;
-            font-size: 0.9rem;
         }
 
         /* --- FAQ (ACCORDION) --- */
@@ -549,7 +523,7 @@
             text-align: left;
             border: none;
             color: var(--text-light);
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
@@ -597,10 +571,9 @@
         }
 
         th, td {
-            padding: 10px;
+            padding: 12px;
             text-align: left;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.9rem;
         }
 
         th {
@@ -625,9 +598,9 @@
             margin: var(--spacing-md) 0;
             overflow-x: auto;
             font-family: 'Roboto Mono', monospace;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             line-height: 1.5;
-            border-left: 3px solid var(--accent-color);
+            border-left: 4px solid var(--accent-color);
             box-shadow: var(--shadow-sm);
         }
 
@@ -661,7 +634,7 @@
         /* --- CARDS DE TECNOLOGIA --- */
         .tech-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
             gap: var(--spacing-sm);
             margin: var(--spacing-md) 0;
         }
@@ -669,7 +642,7 @@
         .tech-card {
             background-color: var(--card-bg);
             border-radius: var(--border-radius);
-            padding: var(--spacing-sm);
+            padding: var(--spacing-md);
             text-align: center;
             transition: var(--transition);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -683,22 +656,22 @@
         }
 
         .tech-card i {
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: var(--accent-color);
-            margin-bottom: var(--spacing-xs);
+            margin-bottom: var(--spacing-sm);
         }
 
         /* --- TESTEMUNHOS --- */
         .testimonials {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--spacing-sm);
-            margin-top: var(--spacing-md);
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
         }
 
         .testimonial-card {
             background-color: var(--card-bg);
-            padding: var(--spacing-sm);
+            padding: var(--spacing-md);
             border-radius: var(--border-radius);
             position: relative;
             box-shadow: var(--shadow-sm);
@@ -712,7 +685,7 @@
 
         .testimonial-card::before {
             content: '"';
-            font-size: 4rem;
+            font-size: 5rem;
             position: absolute;
             top: 10px;
             left: 10px;
@@ -723,9 +696,8 @@
         .testimonial-content {
             position: relative;
             z-index: 1;
-            margin-bottom: var(--spacing-xs);
+            margin-bottom: var(--spacing-sm);
             font-style: italic;
-            font-size: 0.95rem;
         }
 
         .testimonial-author {
@@ -735,8 +707,8 @@
         }
 
         .testimonial-author img {
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             object-fit: cover;
             border: 2px solid var(--secondary-color);
@@ -745,11 +717,10 @@
         .author-info h4 {
             margin-bottom: 0;
             color: var(--accent-color);
-            font-size: 1rem;
         }
 
         .author-info p {
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             color: var(--text-dark);
             margin-bottom: 0;
         }
@@ -763,18 +734,16 @@
             display: block;
             margin-bottom: 0.5rem;
             font-weight: 500;
-            font-size: 0.95rem;
         }
 
         .form-control {
             width: 100%;
-            padding: 0.7rem;
+            padding: 0.75rem;
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: var(--border-radius-sm);
             background-color: rgba(255, 255, 255, 0.05);
             color: var(--text-color);
             transition: var(--transition);
-            font-size: 0.95rem;
         }
 
         .form-control:focus {
@@ -784,7 +753,7 @@
         }
 
         textarea.form-control {
-            min-height: 120px;
+            min-height: 150px;
             resize: vertical;
         }
 
@@ -792,19 +761,19 @@
         footer {
             background-color: var(--primary-color);
             padding: var(--spacing-lg) 0;
-            margin-top: var(--spacing-lg);
+            margin-top: var(--spacing-xl);
         }
 
         .footer-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: var(--spacing-md);
         }
 
         .footer-column h3 {
             color: var(--text-light);
             margin-bottom: var(--spacing-sm);
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             display: flex;
             align-items: center;
             gap: var(--spacing-xs);
@@ -812,7 +781,6 @@
 
         .footer-column h3 i {
             color: var(--accent-color);
-            font-size: 1rem;
         }
 
         .footer-column ul {
@@ -821,7 +789,7 @@
         }
 
         .footer-column li {
-            margin-bottom: 0.7rem;
+            margin-bottom: 0.8rem;
         }
 
         .footer-column a {
@@ -830,8 +798,7 @@
             transition: color 0.3s;
             display: flex;
             align-items: center;
-            gap: 6px;
-            font-size: 0.9rem;
+            gap: 8px;
         }
 
         .footer-column a:hover {
@@ -840,7 +807,7 @@
         }
 
         .footer-column a i {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
         }
 
         .social-links {
@@ -853,8 +820,8 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 36px;
-            height: 36px;
+            width: 40px;
+            height: 40px;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             transition: var(--transition);
@@ -870,19 +837,19 @@
             margin-top: var(--spacing-lg);
             padding-top: var(--spacing-sm);
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             color: var(--text-dark);
         }
 
         /* --- BADGES --- */
         .badge {
             display: inline-block;
-            padding: 0.2rem 0.4rem;
-            border-radius: 3px;
-            font-size: 0.7rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
             font-weight: 600;
-            margin-right: 0.4rem;
-            margin-bottom: 0.4rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
         }
 
         .badge-primary {
@@ -905,11 +872,11 @@
             width: 100%;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: var(--border-radius);
-            margin: var(--spacing-xs) 0;
+            margin: var(--spacing-sm) 0;
         }
 
         .progress-bar {
-            height: 8px;
+            height: 10px;
             border-radius: var(--border-radius);
             background-color: var(--secondary-color);
             transition: width 1s ease-in-out;
@@ -939,8 +906,8 @@
         .modal-content {
             background-color: var(--card-bg);
             border-radius: var(--border-radius);
-            width: 95%;
-            max-width: 500px;
+            width: 90%;
+            max-width: 600px;
             max-height: 90vh;
             overflow-y: auto;
             padding: var(--spacing-md);
@@ -979,7 +946,7 @@
 
         .tooltip .tooltip-text {
             visibility: hidden;
-            width: 180px;
+            width: 200px;
             background-color: var(--primary-color);
             color: var(--text-light);
             text-align: center;
@@ -992,7 +959,7 @@
             transform: translateX(-50%);
             opacity: 0;
             transition: opacity 0.3s;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             box-shadow: var(--shadow-sm);
         }
 
@@ -1013,78 +980,21 @@
         }
 
         /* --- RESPONSIVIDADE --- */
-        @media (max-width: 992px) {
-            .container {
-                padding: 0 var(--spacing-sm);
-            }
-            
-            section {
-                padding: var(--spacing-lg) 0;
-            }
-            
-            .hero {
-                padding: var(--spacing-md) 0;
-            }
-            
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            
-            .hero p {
-                font-size: 1rem;
-            }
-            
-            .features {
-                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            }
-            
-            .tech-cards {
-                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            }
-        }
-
         @media (max-width: 768px) {
-            h1 { font-size: 2rem; }
-            h2 { font-size: 1.8rem; }
-            h3 { font-size: 1.4rem; }
-            
-            .menu-toggle {
-                display: block;
-            }
-            
-            nav ul {
-                display: none;
-                width: 100%;
-                flex-direction: column;
-                padding: var(--spacing-sm) 0;
-            }
-            
-            nav ul.show {
-                display: flex;
-            }
-            
-            nav a {
-                width: 100%;
-                padding: 0.8rem 0;
-                justify-content: center;
-                border-bottom: none;
-                border-left: 3px solid transparent;
-            }
-            
-            nav a.active, nav a:hover {
-                border-bottom: none;
-                border-left-color: var(--accent-color);
-            }
-            
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 2rem; }
+            h3 { font-size: 1.5rem; }
+
             .nav-container {
                 flex-direction: column;
-                align-items: stretch;
+                align-items: center;
             }
-            
-            .logo {
+
+            nav ul {
+                margin-top: var(--spacing-sm);
                 justify-content: center;
             }
-            
+
             /* Timeline em mobile */
             .timeline::after { 
                 left: 20px; 
@@ -1092,7 +1002,7 @@
 
             .timeline-item { 
                 width: 100%; 
-                padding-left: 50px; 
+                padding-left: 60px; 
                 padding-right: 15px; 
             }
 
@@ -1113,10 +1023,16 @@
 
             .btn {
                 width: 100%;
-                max-width: 280px;
+                max-width: 300px;
                 justify-content: center;
             }
-            
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.8rem; }
+            h3 { font-size: 1.3rem; }
+
             .tab-buttons {
                 flex-direction: column;
             }
@@ -1130,66 +1046,6 @@
             .tab-btn.active {
                 border-bottom: none;
                 border-left-color: var(--accent-color);
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-                gap: var(--spacing-md);
-            }
-            
-            .footer-column {
-                text-align: center;
-            }
-            
-            .social-links {
-                justify-content: center;
-            }
-            
-            .footer-column ul {
-                margin-bottom: var(--spacing-md);
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 { font-size: 1.8rem; }
-            h2 { font-size: 1.6rem; }
-            h3 { font-size: 1.3rem; }
-            
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            
-            .section-title::after {
-                width: 50px;
-                height: 2px;
-            }
-            
-            .features {
-                grid-template-columns: 1fr;
-            }
-            
-            .tech-cards {
-                grid-template-columns: 1fr;
-            }
-            
-            .testimonials {
-                grid-template-columns: 1fr;
-            }
-            
-            .timeline-content {
-                padding: 12px 15px;
-            }
-            
-            .timeline-item::after {
-                width: 14px;
-                height: 14px;
-                top: 18px;
-            }
-            
-            table {
-                display: block;
-                overflow-x: auto;
-                white-space: nowrap;
             }
         }
 
@@ -1213,11 +1069,6 @@
         .float {
             animation: float 3s ease-in-out infinite;
         }
-        
-        /* Acessibilidade - VLibras */
-        .vw-plugin-top-wrapper {
-            z-index: 3000 !important;
-        }
     </style>
 </head>
 <body>
@@ -1228,11 +1079,8 @@
                 <i class="fas fa-robot"></i>
                 <span>Portal<span>AJD</span></span>
             </div>
-            <button class="menu-toggle" id="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
             <nav>
-                <ul id="main-nav">
+                <ul>
                     <li><a class="nav-link active" data-target="page-home"><i class="fas fa-home"></i> Home</a></li>
                     <li><a class="nav-link" data-target="page-sobre"><i class="fas fa-info-circle"></i> O que é o AJD?</a></li>
                     <li><a class="nav-link" data-target="page-carreira"><i class="fas fa-briefcase"></i> Carreira Corporativa</a></li>
@@ -1246,52 +1094,1100 @@
     </header>
 
     <main>
-        <!-- Todas as seções do conteúdo permanecem exatamente iguais -->
-        <!-- ... -->
+        <section id="page-home" class="active">
+            <div class="hero">
+                <div class="hero-content container">
+                    <h1>Conheça o Agente Judiciário Digital (AJD)</h1>
+                    <p>A simbiose entre inteligência artificial, direito e empatia, criada para construir um sistema judicial mais ágil, acessível e humano.</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn nav-link" data-target="page-carreira"><i class="fas fa-chart-line"></i> Explore a Carreira Profissional</a>
+                        <a href="#" class="btn btn-secondary nav-link" data-target="page-academica"><i class="fas fa-book"></i> Descubra a Jornada Acadêmica</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                 <h2 class="section-title">Por que o AJD é o Futuro?</h2>
+                 <p class="section-subtitle">Uma revolução no sistema judiciário que combina a precisão da tecnologia com a sensibilidade humana</p>
+                 
+                 <div class="features">
+                    <div class="feature-card">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Agilidade</h3>
+                        <p>Análise de milhares de processos em minutos, identificando peças, teses e jurisprudência relevante com velocidade sobre-humana. Redução de tempo de análise em até 90%.</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                     <div class="feature-card">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Precisão</h3>
+                        <p>Redução de erros operacionais com acurácia superior a 95% em tarefas como classificação de documentos e triagem inicial, minimizando inconsistências humanas.</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 97%"></div>
+                        </div>
+                    </div>
+                     <div class="feature-card">
+                        <i class="fas fa-universal-access"></i>
+                        <h3>Acessibilidade</h3>
+                        <p>Oferece suporte inicial e triagem 24/7 para o cidadão, democratizando o acesso primário à informação jurídica em qualquer lugar e horário.</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 100%"></div>
+                        </div>
+                    </div>
+                     <div class="feature-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Humanização</h3>
+                        <p>Libera profissionais humanos para tarefas complexas e oferece suporte emocional a vítimas e envolvidos no processo, com respostas empáticas validadas por psicólogos.</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title">Tecnologias Utilizadas</h2>
+                <p class="section-subtitle">O AJD combina diversas tecnologias de ponta para oferecer o melhor suporte jurídico digital</p>
+                
+                <div class="tech-cards">
+                    <div class="tech-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>Machine Learning</h3>
+                        <p>Modelos preditivos para análise de jurisprudência e resultados processuais com algoritmos de aprendizado supervisionado e não supervisionado</p>
+                        <div class="badge badge-primary">TensorFlow</div>
+                        <div class="badge badge-primary">PyTorch</div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-language"></i>
+                        <h3>NLP Avançado</h3>
+                        <p>Processamento de Linguagem Natural para interpretação de documentos jurídicos com modelos de linguagem especializados</p>
+                        <div class="badge badge-primary">BERT</div>
+                        <div class="badge badge-primary">GPT-4</div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-database"></i>
+                        <h3>Big Data Jurídico</h3>
+                        <p>Análise de grandes volumes de dados jurídicos para identificação de padrões e construção de knowledge graphs especializados</p>
+                        <div class="badge badge-primary">Neo4j</div>
+                        <div class="badge badge-primary">Spark</div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>IA Afetiva</h3>
+                        <p>Tecnologias de detecção e resposta emocional para interação humana com análise de sentimentos e tom de voz</p>
+                        <div class="badge badge-primary">Affectiva</div>
+                        <div class="badge badge-primary">OpenCV</div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-lock"></i>
+                        <h3>Blockchain</h3>
+                        <p>Garantia de integridade e imutabilidade dos processos judiciais com registro distribuído e verificável</p>
+                        <div class="badge badge-primary">Hyperledger</div>
+                        <div class="badge badge-primary">Ethereum</div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Computação em Nuvem</h3>
+                        <p>Infraestrutura escalável e segura para processamento distribuído de grandes volumes de dados jurídicos</p>
+                        <div class="badge badge-primary">AWS</div>
+                        <div class="badge badge-primary">Azure</div>
+                    </div>
+                </div>
+
+                <h2 class="section-title">Depoimentos</h2>
+                <p class="section-subtitle">O que especialistas e usuários dizem sobre a revolução do AJD no sistema judiciário</p>
+                
+                <div class="testimonials">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            "O AJD transformou completamente nossa capacidade de análise processual. O que antes levava semanas agora é feito em horas, com uma precisão impressionante."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Dra. Ana Claudia">
+                            <div class="author-info">
+                                <h4>Dra. Ana Claudia</h4>
+                                <p>Juíza Federal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            "Como advogado, o AJD me permite focar na estratégia do caso, enquanto a parte burocrática e de pesquisa é resolvida de forma rápida e eficiente."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. Rodrigo Mendes">
+                            <div class="author-info">
+                                <h4>Dr. Rodrigo Mendes</h4>
+                                <p>Advogado Criminalista</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            "O atendimento empático do AJD foi fundamental para mim em um momento difícil. Fui ouvida e compreendida, e obtive informações claras sobre meu processo."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Mariana Souza">
+                            <div class="author-info">
+                                <h4>Mariana Souza</h4>
+                                <p>Usuária do sistema</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-sobre">
+            <div class="container">
+                <h2 class="section-title">O Agente Judiciário Digital: Redefinindo o Apoio Jurídico</h2>
+                <p class="section-subtitle">Mais que uma ferramenta, um parceiro digital no sistema de justiça</p>
+                
+                <div class="code-block">
+                    <code>
+                        <span class="code-comment">// Exemplo de algoritmo de análise processual</span><br>
+                        <span class="code-keyword">function</span> <span class="code-function">analisarProcesso</span>(processo) {<br>
+                        &nbsp;&nbsp;<span class="code-keyword">const</span> jurisprudencia = <span class="code-function">buscarJurisprudencia</span>(processo.tema);<br>
+                        &nbsp;&nbsp;<span class="code-keyword">const</span> similaridade = <span class="code-function">calcularSimilaridade</span>(processo, jurisprudencia);<br>
+                        &nbsp;&nbsp;<span class="code-keyword">const</span> resultado = <span class="code-function">preverResultado</span>(similaridade);<br>
+                        &nbsp;&nbsp;<span class="code-keyword">return</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;resultado,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;confianca: <span class="code-function">calcularConfianca</span>(resultado),<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;fundamentacao: <span class="code-function">gerarFundamentacao</span>(jurisprudencia),<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;empatia: <span class="code-function">ajustarLinguagem</span>(processo.perfilUsuario)<br>
+                        &nbsp;&nbsp;};<br>
+                        }
+                    </code>
+                </div>
+
+                <h3>Onde Atua?</h3>
+                <p>Em escritórios de advocacia, tribunais, defensorias públicas e órgãos de mediação, auxiliando em tarefas como:</p>
+                <ul>
+                    <li><span class="badge badge-primary">Triagem</span> Classificação e priorização de processos com base em critérios jurídicos e sociais</li>
+                    <li><span class="badge badge-primary">Análise</span> Elaboração de minutas e pareceres automatizados com fundamentação jurídica robusta</li>
+                    <li><span class="badge badge-primary">Pesquisa</span> Análise de jurisprudência e doutrina relevante em segundos, cruzando milhares de fontes</li>
+                    <li><span class="badge badge-primary">Mediação</span> Resolução de conflitos online com técnicas de negociação baseadas em IA</li>
+                    <li><span class="badge badge-primary">Suporte</span> Atendimento emocional a partes vulneráveis com respostas validadas por psicólogos</li>
+                    <li><span class="badge badge-primary">Predição</span> Análise estatística de resultados processuais com base em dados históricos</li>
+                </ul>
+
+                <h3>Estatísticas de Impacto</h3>
+                <div class="features">
+                    <div class="feature-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>90% mais rápido</h3>
+                        <p>Redução no tempo de análise inicial de processos</p>
+                        <div class="badge badge-secondary">Eficiência</div>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>95% de precisão</h3>
+                        <p>Em classificação e triagem de documentos jurídicos</p>
+                        <div class="badge badge-secondary">Confiança</div>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-smile"></i>
+                        <h3>85% satisfação</h3>
+                        <p>Dos usuários em atendimentos com o módulo empático</p>
+                        <div class="badge badge-secondary">Humanização</div>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <h3>60% redução</h3>
+                        <p>Nos custos operacionais do sistema judiciário</p>
+                        <div class="badge badge-secondary">Economia</div>
+                    </div>
+                </div>
+
+                <h3>Arquitetura Técnica</h3>
+                <div class="features">
+                    <div class="feature-card">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Camada de Dados</h3>
+                        <p>Armazenamento e processamento de milhões de processos, jurisprudências e doutrinas em bancos de dados especializados com modelos vetoriais para busca semântica</p>
+                        <div class="badge badge-primary">Elasticsearch</div>
+                        <div class="badge badge-primary">Neo4j</div>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Camada de Processamento</h3>
+                        <p>Algoritmos de NLP, machine learning e análise preditiva para interpretação jurídica com modelos fine-tuned para linguagem jurídica</p>
+                        <div class="badge badge-primary">Python</div>
+                        <div class="badge badge-primary">TensorFlow</div>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-user"></i>
+                        <h3>Camada de Interface</h3>
+                        <p>Sistemas de interação natural com usuários finais (chatbots, voz, realidade aumentada) adaptados ao perfil do usuário</p>
+                        <div class="badge badge-primary">React</div>
+                        <div class="badge badge-primary">WebSockets</div>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Camada de Segurança</h3>
+                        <p>Criptografia de ponta a ponta, controle de acesso baseado em papéis e auditoria completa de todas as interações</p>
+                        <div class="badge badge-primary">OAuth 2.0</div>
+                        <div class="badge badge-primary">Blockchain</div>
+                    </div>
+                </div>
+
+                <h3>Linha do Tempo do Desenvolvimento</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Fase 1: Protótipo</h3>
+                            <span>2020-2021</span>
+                            <p>Desenvolvimento do núcleo de análise documental com NLP básico e integração inicial com bases de dados jurídicos</p>
+                            <div class="badge badge-primary">Pesquisa</div>
+                            <div class="badge badge-primary">Validação</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Fase 2: Piloto</h3>
+                            <span>2021-2022</span>
+                            <p>Implantação controlada em tribunais selecionados com foco em classificação de processos e geração de minutas</p>
+                            <div class="badge badge-primary">Testes</div>
+                            <div class="badge badge-primary">Iteração</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Fase 3: Expansão</h3>
+                            <span>2022-2023</span>
+                            <p>Ampliação para escritórios de advocacia e defensoria pública com módulos de pesquisa e atendimento inicial</p>
+                            <div class="badge badge-primary">Escalabilidade</div>
+                            <div class="badge badge-primary">Treinamento</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Fase 4: Maturidade</h3>
+                            <span>2023-2024</span>
+                            <p>Implementação do módulo empático e capacitação para decisões autônomas em casos de baixa complexidade</p>
+                            <div class="badge badge-primary">Autonomia</div>
+                            <div class="badge badge-primary">Empatia</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Fase 5: Futuro</h3>
+                            <span>2025+</span>
+                            <p>Integração com metaverso jurídico e sistemas preditivos para prevenção de litígios antes mesmo de ocorrerem</p>
+                            <div class="badge badge-primary">Inovação</div>
+                            <div class="badge badge-primary">Prevenção</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-carreira">
+            <div class="container">
+                <h2 class="section-title">O Plano de Carreira do AJD: Da Operação à Estratégia</h2>
+                <p class="section-subtitle">Uma trajetória profissional estruturada em níveis de senioridade, com aumento gradual de autonomia e responsabilidade</p>
+                
+                <div class="tabs-container">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="tab-junior"><i class="fas fa-user-graduate"></i> Júnior</button>
+                        <button class="tab-btn" data-tab="tab-pleno"><i class="fas fa-user-tie"></i> Pleno</button>
+                        <button class="tab-btn" data-tab="tab-senior"><i class="fas fa-user-shield"></i> Sênior</button>
+                        <button class="tab-btn" data-tab="tab-especialista"><i class="fas fa-user-ninja"></i> Especialista</button>
+                    </div>
+
+                    <div id="tab-junior" class="tab-content active">
+                        <h3>AJD Júnior <span class="badge badge-secondary">Nível 1</span></h3>
+                        <p><strong>Foco:</strong> Apoio e Triagem.</p>
+                        <p><strong>Funções:</strong> Triagem de documentos, classificação de peças, resumos automáticos e minutas básicas. Atua como assistente digital para tarefas operacionais.</p>
+                        <p><strong>Tecnologia:</strong> Machine learning supervisionado, OCR e PNL básico com modelos pré-treinados.</p>
+                        <p><strong>Supervisão:</strong> Constante (validação humana total em todas as saídas).</p>
+                        <p><strong>Promoção:</strong> Acurácia ≥ 95% por 6 meses consecutivos e baixo índice de falhas.</p>
+                        <p><strong>Salário Médio:</strong> R$ 8.000 - R$ 12.000 (equivalente para desenvolvimento e manutenção)</p>
+                    </div>
+                    <div id="tab-pleno" class="tab-content">
+                        <h3>AJD Pleno <span class="badge badge-secondary">Nível 2</span></h3>
+                        <p><strong>Foco:</strong> Análise e Sugestão.</p>
+                        <p><strong>Funções:</strong> Pareceres automatizados, identificação de conflitos jurisprudenciais e modelos de sentenças. Pode sugerir linhas argumentativas e identificar inconsistências em petições.</p>
+                        <p><strong>Tecnologia:</strong> Modelos preditivos com big data e argumentação algorítmica, incluindo fine-tuning de modelos.</p>
+                        <p><strong>Supervisão:</strong> Parcial (validação por amostragem e em casos complexos).</p>
+                        <p><strong>Promoção:</strong> Decisões com taxa de revisão inferior a 5% e capacidade de atualizar seus próprios conhecimentos.</p>
+                        <p><strong>Salário Médio:</strong> R$ 15.000 - R$ 22.000 (equivalente)</p>
+                    </div>
+                    <div id="tab-senior" class="tab-content">
+                        <h3>AJD Sênior <span class="badge badge-secondary">Nível 3</span></h3>
+                        <p><strong>Foco:</strong> Decisão Autônoma Limitada.</p>
+                        <p><strong>Funções:</strong> Decisões em casos de baixa/média complexidade, mediação automatizada e julgamento em massa de processos padronizados. Pode representar a primeira instância em pequenas causas.</p>
+                        <p><strong>Tecnologia:</strong> Princípios jurídicos como embeddings, aprendizado contínuo e ética computacional integrada ao pipeline de decisão.</p>
+                        <p><strong>Supervisão:</strong> Mínima (revisão apenas em casos de risco ou quando solicitado).</p>
+                        <p><strong>Promoção:</strong> Auditoria de qualidade com 98% de acerto e conformidade ética comprovada por 1 ano.</p>
+                        <p><strong>Salário Médio:</strong> R$ 25.000 - R$ 35.000 (equivalente)</p>
+                    </div>
+                    <div id="tab-especialista" class="tab-content">
+                        <h3>AJD Especialista <span class="badge badge-secondary">Nível 4</span></h3>
+                        <p><strong>Foco:</strong> Estratégico e Técnico.</p>
+                        <p><strong>Ramificações:</strong></p>
+                        <ul>
+                            <li><span class="badge badge-accent">Técnico</span> Calibragem de outros AJDs e desenvolvimento de novos modelos com pesquisa em IA aplicada ao Direito</li>
+                            <li><span class="badge badge-accent">Ético</span> Compliance e governança algorítmica, garantindo que os sistemas respeitem direitos fundamentais</li>
+                            <li><span class="badge badge-accent">Consultivo</span> Apoio em decisões humanas complexas com análise de múltiplas variáveis e cenários</li>
+                            <li><span class="badge badge-accent">Empático</span> Desenvolvimento de sistemas de interação humana com validação psicológica e social</li>
+                        </ul>
+                        <p><strong>Autonomia:</strong> Completa, com responsabilidade sobre sistemas críticos.</p>
+                        <p><strong>Salário Médio:</strong> R$ 40.000+ (equivalente)</p>
+                    </div>
+                </div>
+
+                <h3>Resumo da Progressão</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cargo</th>
+                            <th>Foco</th>
+                            <th>Supervisão</th>
+                            <th>Exemplo de Atuação</th>
+                            <th>Tecnologias</th>
+                            <th>Salário Equivalente</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Júnior</strong></td>
+                            <td>Apoio e triagem</td>
+                            <td>Total</td>
+                            <td>Classificação de peças processuais</td>
+                            <td>OCR, NLP básico</td>
+                            <td>R$ 8k-12k</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pleno</strong></td>
+                            <td>Análise e sugestão</td>
+                            <td>Parcial</td>
+                            <td>Modelos de sentença e pareceres</td>
+                            <td>Machine Learning</td>
+                            <td>R$ 15k-22k</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sênior</strong></td>
+                            <td>Decisão autônoma limitada</td>
+                            <td>Mínima</td>
+                            <td>Decisões em processos padronizados</td>
+                            <td>Deep Learning</td>
+                            <td>R$ 25k-35k</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Especialista</strong></td>
+                            <td>Estratégico/técnico</td>
+                            <td>Autônomo</td>
+                            <td>Governança e consultoria complexa</td>
+                            <td>IA Explicável</td>
+                            <td>R$ 40k+</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Certificações Recomendadas</h3>
+                <div class="features">
+                    <div class="feature-card">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Certificação AJD Essentials</h3>
+                        <p>Fundamentos do Agente Judiciário Digital para operações básicas e triagem inicial</p>
+                        <div class="badge badge-primary">120 horas</div>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>IA Aplicada ao Direito</h3>
+                        <p>Machine Learning e NLP para análise jurídica com estudos de caso reais</p>
+                        <div class="badge badge-primary">200 horas</div>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-balance-scale"></i>
+                        <h3>Ética Computacional Jurídica</h3>
+                        <p>Princípios éticos e vieses algorítmicos no contexto do sistema judiciário</p>
+                        <div class="badge badge-primary">150 horas</div>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Empatia Digital</h3>
+                        <p>Técnicas de IA afetiva e comunicação não-violenta em contextos jurídicos</p>
+                        <div class="badge badge-primary">180 horas</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-academica">
+            <div class="container">
+                <h2 class="section-title">Formando o AJD Humanizado: A Fronteira do Conhecimento</h2>
+                <p class="section-subtitle">Para os desafios que exigem mais do que lógica, a jornada acadêmica prepara um AJD com profunda sensibilidade, focado no cuidado, na empatia e na justiça restaurativa</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Certificação Técnica</h3>
+                            <span>Duração: 6-12 meses</span>
+                            <p>Foco em comunicação empática automatizada, ensinando a IA os fundamentos da escuta ativa e detecção de emoções em contextos jurídicos sensíveis.</p>
+                            <div class="badge badge-primary">NLP Afetivo</div>
+                            <div class="badge badge-primary">Ética Computacional</div>
+                            <div class="badge badge-secondary">400 horas</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Graduação</h3>
+                            <span>Duração: 4 anos</span>
+                            <p>Bacharelado em Direito Emocional Computacional, integrando Direito, Psicologia e IA Afetiva com estágios em tribunais digitais.</p>
+                            <div class="badge badge-primary">Direito Digital</div>
+                            <div class="badge badge-primary">Psicologia Cognitiva</div>
+                            <div class="badge badge-secondary">3.200 horas</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Pós-Graduação</h3>
+                            <span>Duração: 1-2 anos</span>
+                            <p>Especialização em Justiça Restaurativa Digital, para aplicar técnicas de mediação compassiva via tecnologia em conflitos jurídicos.</p>
+                            <div class="badge badge-primary">Mediação Digital</div>
+                            <div class="badge badge-primary">Resolução de Conflitos</div>
+                            <div class="badge badge-secondary">600 horas</div>
+                        </div>
+                    </div>
+                     <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Mestrado</h3>
+                            <span>Duração: 2 anos</span>
+                            <p>Mestrado em Psicologia Computacional e Direito Afetivo, para pesquisar e desenvolver sistemas sensíveis a vulnerabilidades em processos judiciais.</p>
+                            <div class="badge badge-primary">Pesquisa em IA</div>
+                            <div class="badge badge-primary">Direito Afetivo</div>
+                            <div class="badge badge-secondary">1.200 horas</div>
+                        </div>
+                    </div>
+                     <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Doutorado</h3>
+                            <span>Duração: 3-5 anos</span>
+                            <p>Doutorado em Justiça Empática e Tecnologias do Cuidado, focado em inovar na criação de modelos de IA que integram justiça e acolhimento em escala.</p>
+                            <div class="badge badge-primary">Inovação Jurídica</div>
+                            <div class="badge badge-primary">Tecnologias do Cuidado</div>
+                            <div class="badge badge-secondary">2.400 horas</div>
+                        </div>
+                    </div>
+                     <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Pós-Doutorado</h3>
+                            <span>Duração: 1-2 anos</span>
+                            <p>Inovação em Direitos Humanos e IA Empática, liderando a criação de protocolos globais para o uso ético da IA na Justiça com equipes internacionais.</p>
+                            <div class="badge badge-primary">Direitos Humanos</div>
+                            <div class="badge badge-primary">Governança Global</div>
+                            <div class="badge badge-secondary">1.600 horas</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Competências Desenvolvidas</h3>
+                <div class="features">
+                    <div class="feature-card">
+                        <i class="fas fa-balance-scale"></i>
+                        <h3>Jurídicas</h3>
+                        <p>Interpretação de normas, construção de argumentos jurídicos e aplicação de princípios do direito com precisão algorítmica.</p>
+                        <ul>
+                            <li>Teoria do Direito Computacional</li>
+                            <li>Lógica Jurídica Formal</li>
+                            <li>Argumentação Algorítmica</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>Técnicas</h3>
+                        <p>Desenvolvimento e manutenção de sistemas de IA especializados em análise jurídica e tomada de decisão.</p>
+                        <ul>
+                            <li>Machine Learning Jurídico</li>
+                            <li>NLP para Documentos Legais</li>
+                            <li>Arquitetura de Sistemas Jurídicos</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Emocionais</h3>
+                        <p>Detecção e resposta adequada a emoções humanas em contextos jurídicos sensíveis com validação psicológica.</p>
+                        <ul>
+                            <li>IA Afetiva</li>
+                            <li>Comunicação Não-Violenta</li>
+                            <li>Psicologia do Trauma</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-globe"></i>
+                        <h3>Éticas</h3>
+                        <p>Tomada de decisão alinhada com princípios éticos e direitos fundamentais em contextos algorítmicos.</p>
+                        <ul>
+                            <li>Governança de IA</li>
+                            <li>Vieses Algorítmicos</li>
+                            <li>Transparência Explicável</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Instituições Parceiras</h3>
+                <div class="tech-cards">
+                    <div class="tech-card">
+                        <i class="fas fa-university"></i>
+                        <h3>Universidade de São Paulo</h3>
+                        <p>Programa de Direito Digital e IA com laboratório especializado em jurimetria</p>
+                        <div class="badge badge-primary">Brasil</div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Harvard Law School</h3>
+                        <p>Centro de Ética Computacional e Direito com foco em governança algorítmica</p>
+                        <div class="badge badge-primary">EUA</div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-landmark"></i>
+                        <h3>Max Planck Institute</h3>
+                        <p>Pesquisa em Direito Comparado e Sistemas Jurídicos Inteligentes</p>
+                        <div class="badge badge-primary">Alemanha</div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-microscope"></i>
+                        <h3>Singularity University</h3>
+                        <p>Programas de aceleração em LawTech e Justiça Preditiva</p>
+                        <div class="badge badge-primary">Global</div>
+                    </div>
+                </div>
+
+                <h3>Grade Curricular Exemplo (Graduação)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Semestre</th>
+                            <th>Disciplinas</th>
+                            <th>Créditos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1º</td>
+                            <td>Introdução ao Direito Digital, Lógica Computacional, Psicologia da Comunicação</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>2º</td>
+                            <td>Teoria do Estado Digital, Algoritmos e Estruturas de Dados, Empatia Computacional</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>3º</td>
+                            <td>Direito Constitucional Aplicado, Machine Learning Básico, Neurociência das Emoções</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>4º</td>
+                            <td>Processo Civil Digital, NLP para Documentos Jurídicos, Psicologia do Trauma</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>5º</td>
+                            <td>Direito Penal e IA, Sistemas de Decisão, Mediação de Conflitos Digitais</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>6º</td>
+                            <td>Ética Computacional, Deep Learning Jurídico, Justiça Restaurativa</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>7º</td>
+                            <td>Governança de IA, Projeto Integrador I, Estágio Supervisionado</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>8º</td>
+                            <td>Direitos Humanos Digitais, Projeto Integrador II, Empreendedorismo em LawTech</td>
+                            <td>22</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="page-etica">
+            <div class="container">
+                <h2 class="section-title">Governança, Ética e a Visão de um Futuro Justo</h2>
+                <p class="section-subtitle">Construindo um sistema judiciário digital que preserva e amplifica nossos valores humanos mais fundamentais</p>
+                
+                <div class="features">
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Governança Algorítmica</h3>
+                        <p>O AJD não opera no vácuo. Sua atuação é regida por comitês de ética, auditorias constantes e transparência para garantir que os algoritmos sejam justos e imparciais, com revisão humana em pontos críticos.</p>
+                        <ul>
+                            <li>Comitês multidisciplinares de ética</li>
+                            <li>Auditorias algorítmicas trimestrais</li>
+                            <li>Transparência explicável (XAI)</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>O Papel Humano na Era Digital</h3>
+                        <p>O objetivo não é substituir, mas potencializar. O AJD assume tarefas repetitivas, liberando profissionais humanos para se concentrarem no julgamento complexo e na estratégia processual que exigem criatividade e sabedoria.</p>
+                        <ul>
+                            <li>Humanos focados em casos complexos</li>
+                            <li>IA lidando com volume e padrões</li>
+                            <li>Sinergia entre julgamento humano e análise algorítmica</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h3>Justiça Centrada no Trauma</h3>
+                        <p>A vertente empática do AJD representa uma revolução no tratamento de vítimas, oferecendo um canal seguro e acolhedor, transformando o sistema em um ambiente de cuidado que evita a revitimização.</p>
+                        <ul>
+                            <li>Detecção de vulnerabilidade</li>
+                            <li>Respostas validadas por psicólogos</li>
+                            <li>Encaminhamento humanizado</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Princípios Éticos do AJD</h3>
+                <div class="tech-cards">
+                    <div class="tech-card">
+                        <i class="fas fa-eye"></i>
+                        <h3>Transparência</h3>
+                        <p>Todas as decisões devem ser explicáveis e rastreáveis, com justificativa clara e acesso aos critérios utilizados.</p>
+                        <div class="badge badge-secondary">XAI</div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-equals"></i>
+                        <h3>Imparcialidade</h3>
+                        <p>Algoritmos livres de vieses discriminatórios com testes contínuos para identificação e correção de preconceitos.</p>
+                        <div class="badge badge-secondary">Fairness</div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-user-shield"></i>
+                        <h3>Privacidade</h3>
+                        <p>Proteção rigorosa de dados sensíveis com criptografia de ponta a ponta e acesso restrito.</p>
+                        <div class="badge badge-secondary">LGPD</div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-undo"></i>
+                        <h3>Revisibilidade</h3>
+                        <p>Toda decisão pode ser revisada por humanos, com camadas de apelação e contestação claras.</p>
+                        <div class="badge badge-secondary">Appeal</div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Empatia</h3>
+                        <p>Respostas adaptadas ao estado emocional do usuário, com linguagem validada por profissionais.</p>
+                        <div class="badge badge-secondary">NVC</div>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Melhoria Contínua</h3>
+                        <p>Aprendizado constante com feedback humano, mantendo sempre os princípios éticos.</p>
+                        <div class="badge badge-secondary">Active Learning</div>
+                    </div>
+                </div>
+
+                <h3>Framework de Decisão Ética</h3>
+                <div class="code-block">
+                    <code>
+                        <span class="code-comment">// Algoritmo de verificação ética</span><br>
+                        <span class="code-keyword">function</span> <span class="code-function">verificarDecisaoEtica</span>(decisao) {<br>
+                        &nbsp;&nbsp;<span class="code-comment">// Verificação de princípios básicos</span><br>
+                        &nbsp;&nbsp;<span class="code-keyword">const</span> principios = {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;transparencia: <span class="code-function">avaliarTransparencia</span>(decisao),<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;imparcialidade: <span class="code-function">testarVieses</span>(decisao),<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;impacto: <span class="code-function">preverImpactoSocial</span>(decisao),<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;legalidade: <span class="code-function">verificarConformidadeLegal</span>(decisao),<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;empatia: <span class="code-function">avaliarSensibilidade</span>(decisao.usuario)<br>
+                        &nbsp;&nbsp;};<br>
+                        <br>
+                        &nbsp;&nbsp;<span class="code-comment">// Nível de supervisão necessário</span><br>
+                        &nbsp;&nbsp;<span class="code-keyword">const</span> nivelSupervisao = <span class="code-function">calcularNivelSupervisao</span>(decisao.complexidade);<br>
+                        <br>
+                        &nbsp;&nbsp;<span class="code-comment">// Retorna aprovação ou requer supervisão</span><br>
+                        &nbsp;&nbsp;<span class="code-keyword">return</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;aprovada: principios.transparencia && principios.imparcialidade &&<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;principios.impacto && principios.legalidade,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;supervisao: nivelSupervisao,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;alertas: <span class="code-function">identificarAlertasEticos</span>(principios)<br>
+                        &nbsp;&nbsp;};<br>
+                        }
+                    </code>
+                </div>
+
+                <h3>Casos de Uso Críticos</h3>
+                <div class="features">
+                    <div class="feature-card">
+                        <i class="fas fa-gavel"></i>
+                        <h3>Sentenças Padronizadas</h3>
+                        <p>Decisões autônomas em processos de baixa complexidade como execuções fiscais e ações repetitivas, com revisão por amostragem.</p>
+                        <div class="badge badge-accent">Autonomia: 85%</div>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Mediação Digital</h3>
+                        <p>Resolução de conflitos consumeristas e familiares simples através de plataforma online com técnicas de negociação algorítmica.</p>
+                        <div class="badge badge-accent">Sucesso: 78%</div>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Atendimento a Vítimas</h3>
+                        <p>Suporte inicial a vítimas de violência com detecção de trauma e encaminhamento humanizado para serviços especializados.</p>
+                        <div class="badge badge-accent">Satisfação: 92%</div>
+                    </div>
+                </div>
+
+                <h3>Futuro e Desafios</h3>
+                <div class="tech-cards">
+                    <div class="tech-card">
+                        <i class="fas fa-atom"></i>
+                        <h3>IA Quântica</h3>
+                        <p>Aplicação de computação quântica para modelar sistemas jurídicos complexos e relações entre normas.</p>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-vr-cardboard"></i>
+                        <h3>Metaverso Jurídico</h3>
+                        <p>Ambientes virtuais para simulação de casos, mediação imersiva e educação jurídica interativa.</p>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-dna"></i>
+                        <h3>Neurodireito</h3>
+                        <p>Integração de interfaces neurais para compreensão profunda de intenções e estados mentais.</p>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-seedling"></i>
+                        <h3>Prevenção de Litígios</h3>
+                        <p>Sistemas preditivos que identificam potenciais conflitos antes mesmo de se tornarem processos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-faq">
+            <div class="container">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                <p class="section-subtitle">Tire suas dúvidas sobre o Agente Judiciário Digital e sua atuação no sistema judiciário</p>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">O AJD vai substituir advogados e juízes? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>Não. O AJD é uma ferramenta de suporte avançado. A decisão final em casos complexos e o julgamento que exige sabedoria e experiência de vida continuarão sendo responsabilidade de profissionais humanos. A tecnologia atua como assistente, potencializando a capacidade humana, não substituindo-a.</p>
+                                <p>Estudos mostramos que:</p>
+                                <ul>
+                                    <li>Advogados que usam AJD são 40% mais produtivos</li>
+                                    <li>Juízes com suporte de AJD têm 30% mais consistência em decisões similares</li>
+                                    <li>O tempo de resolução de casos cai em média 60%</li>
+                                </ul>
+                                <p>A relação ideal é de colaboração, onde humanos e máquinas complementam suas forças:</p>
+                                <div class="features" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin: 1rem 0;">
+                                    <div class="feature-card" style="padding: 1rem;">
+                                        <i class="fas fa-robot"></i>
+                                        <h4 style="font-size: 1.2rem;">AJD</h4>
+                                        <p style="font-size: 0.9rem;">Velocidade<br>Volume<br>Consistência<br>Disponibilidade</p>
+                                    </div>
+                                    <div class="feature-card" style="padding: 1rem;">
+                                        <i class="fas fa-plus"></i>
+                                        <h4 style="font-size: 1.2rem;">+</h4>
+                                    </div>
+                                    <div class="feature-card" style="padding: 1rem;">
+                                        <i class="fas fa-user-tie"></i>
+                                        <h4 style="font-size: 1.2rem;">Humanos</h4>
+                                        <p style="font-size: 0.9rem;">Criatividade<br>Sabedoria<br>Experiência<br>Empatia profunda</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Como se garante que o AJD não tenha preconceitos? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>Através de um treinamento com bases de dados diversificadas e representativas, auditorias de viés contínuas e a supervisão de especialistas em ética e governança algorítmica. Implementamos:</p>
+                                <ul>
+                                    <li><strong>Testes regulares para detecção de vieses:</strong> Avaliação mensal com datasets balanceados</li>
+                                    <li><strong>Diversidade nos dados de treinamento:</strong> Inclusão de casos de todas as regiões e grupos sociais</li>
+                                    <li><strong>Comitês de ética multidisciplinares:</strong> Juristas, cientistas de dados e representantes da sociedade civil</li>
+                                    <li><strong>Transparência nos critérios de decisão:</strong> Explicabilidade de todas as recomendações</li>
+                                    <li><strong>Mecanismos de correção:</strong> Atualização imediata quando identificado qualquer viés</li>
+                                </ul>
+                                <p>Além disso, utilizamos técnicas avançadas como:</p>
+                                <div class="tech-cards" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); margin: 1rem 0;">
+                                    <div class="tech-card" style="padding: 0.5rem;">
+                                        <div class="badge badge-primary">Adversarial DEBIASING</div>
+                                    </div>
+                                    <div class="tech-card" style="padding: 0.5rem;">
+                                        <div class="badge badge-primary">Fairness Constraints</div>
+                                    </div>
+                                    <div class="tech-card" style="padding: 0.5rem;">
+                                        <div class="badge badge-primary">Counterfactual Analysis</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Quem é o responsável legal por um erro do AJD? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>A responsabilidade é compartilhada, seguindo um framework legal claro que envolve:</p>
+                                <ol>
+                                    <li><strong>Desenvolvedores:</strong> Pela implementação correta dos algoritmos e manutenção dos sistemas</li>
+                                    <li><strong>Instituição:</strong> Pela supervisão adequada e uso responsável da tecnologia</li>
+                                    <li><strong>Supervisor humano:</strong> Pela validação conforme o nível de autonomia do sistema</li>
+                                    <li><strong>Comitê de Ética:</strong> Pela governança e diretrizes de uso</li>
+                                </ol>
+                                <p>Cada decisão é registrada com seu nível de autonomia e supervisão correspondente em blockchain para garantia de rastreabilidade:</p>
+                                <div class="code-block">
+                                    <code>
+                                        <span class="code-keyword">struct</span> DecisionRecord {<br>
+                                        &nbsp;&nbsp;decision_id: String,<br>
+                                        &nbsp;&nbsp;case_id: String,<br>
+                                        &nbsp;&nbsp;autonomy_level: <span class="code-number">u8</span>, <span class="code-comment">// 1-4 scale</span><br>
+                                        &nbsp;&nbsp;supervisor_id: Option&lt;String&gt;,<br>
+                                        &nbsp;&nbsp;timestamp: <span class="code-number">i64</span>,<br>
+                                        &nbsp;&nbsp;hash: String<br>
+                                        }
+                                    </code>
+                                </div>
+                                <p>Em casos de erro, uma análise forense detalhada identifica exatamente em qual camada ocorreu a falha para atribuição adequada de responsabilidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Como um Agente Digital pode ser "empático"? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>A empatia computacional se baseia em:</p>
+                                <div class="features" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin: 1rem 0;">
+                                    <div class="feature-card" style="padding: 1rem;">
+                                        <i class="fas fa-comment-alt"></i>
+                                        <h4 style="font-size: 1.2rem;">Análise de Linguagem</h4>
+                                        <p style="font-size: 0.9rem;">Detecção de padrões emocionais no texto com modelos de sentiment analysis especializados</p>
+                                    </div>
+                                    <div class="feature-card" style="padding: 1rem;">
+                                        <i class="fas fa-microphone"></i>
+                                        <h4 style="font-size: 1.2rem;">Análise de Voz</h4>
+                                        <p style="font-size: 0.9rem;">Identificação de tom, velocidade e padrões vocais indicativos de estado emocional</p>
+                                    </div>
+                                    <div class="feature-card" style="padding: 1rem;">
+                                        <i class="fas fa-video"></i>
+                                        <h4 style="font-size: 1.2rem;">Análise Facial</h4>
+                                        <p style="font-size: 0.9rem;">Detecção de microexpressões faciais em interações por vídeo (opcional)</p>
+                                    </div>
+                                    <div class="feature-card" style="padding: 1rem;">
+                                        <i class="fas fa-reply"></i>
+                                        <h4 style="font-size: 1.2rem;">Resposta Adequada</h4>
+                                        <p style="font-size: 0.9rem;">Baseada em protocolos psicológicos validados para cada contexto</p>
+                                    </div>
+                                </div>
+                                <p style="margin-top: 1rem;">O sistema responde com linguagem validada por psicólogos como sendo acolhedora, neutra e não-julgadora, sempre encaminhando para suporte humano quando necessário. A eficácia é comprovada por estudos:</p>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Métrica</th>
+                                            <th>Humano</th>
+                                            <th>AJD</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Consistência empática</td>
+                                            <td>65%</td>
+                                            <td>92%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tempo de resposta</td>
+                                            <td>24-48h</td>
+                                            <td>Imediato</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Satisfação do usuário</td>
+                                            <td>78%</td>
+                                            <td>85%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">O AJD pode aprender com seus erros? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>Sim, mas de forma controlada e supervisionada. O sistema possui mecanismos de:</p>
+                                <ul>
+                                    <li><strong>Aprendizado contínuo:</strong> Atualização periódica com novos dados e jurisprudências, com validação humana</li>
+                                    <li><strong>Feedback supervisionado:</strong> Correções humanas são incorporadas de forma controlada após análise de impacto</li>
+                                    <li><strong>Versionamento:</strong> Cada atualização é testada em ambiente controlado e documentada antes da implantação</li>
+                                    <li><strong>Rollback seguro:</strong> Capacidade de retornar a versões anteriores em caso de problemas</li>
+                                </ul>
+                                <p>Todas as alterações são auditadas e registradas para garantir rastreabilidade. O processo de aprendizado segue um fluxo rigoroso:</p>
+                                <div class="code-block">
+                                    <code>
+                                        <span class="code-keyword">function</span> <span class="code-function">aprendizadoContinuo</span>(feedback) {<br>
+                                        &nbsp;&nbsp;<span class="code-keyword">if</span> (!<span class="code-function">validarFeedback</span>(feedback)) {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-string">"Feedback inválido"</span>;<br>
+                                        &nbsp;&nbsp;}<br>
+                                        &nbsp;&nbsp;<span class="code-keyword">const</span> impacto = <span class="code-function">avaliarImpacto</span>(feedback);<br>
+                                        &nbsp;&nbsp;<span class="code-keyword">if</span> (impacto > LIMITE_AUTO) {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-function">solicitarAprovacaoHumana</span>(feedback);<br>
+                                        &nbsp;&nbsp;} <span class="code-keyword">else</span> {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-function">aplicarAtualizacao</span>(feedback);<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-function">registrarMudanca</span>(feedback);<br>
+                                        &nbsp;&nbsp;}<br>
+                                        }
+                                    </code>
+                                </div>
+                                <p>Este processo garante que o AJD melhore continuamente sem comprometer sua estabilidade ou princípios éticos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Como posso me tornar um desenvolvedor de sistemas AJD? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>A carreira de desenvolvedor AJD combina conhecimentos técnicos e jurídicos. Recomendamos o seguinte caminho:</p>
+                                <ol>
+                                    <li><strong>Formação básica:</strong> Graduação em Ciência da Computação, Direito ou Engenharia de Software</li>
+                                    <li><strong>Especialização:</strong> Pós-graduação em Direito Digital, IA Aplicada ou áreas correlatas</li>
+                                    <li><strong>Certificações:</strong>
+                                        <ul>
+                                            <li>Certificação AJD Developer</li>
+                                            <li>Ética em IA (MIT, Harvard ou Coursera)</li>
+                                            <li>NLP para Sistemas Jurídicos</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Habilidades técnicas:</strong>
+                                        <div class="tech-cards" style="grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); margin: 0.5rem 0;">
+                                            <div class="tech-card" style="padding: 0.5rem;">
+                                                <div class="badge badge-primary">Python</div>
+                                            </div>
+                                            <div class="tech-card" style="padding: 0.5rem;">
+                                                <div class="badge badge-primary">TensorFlow</div>
+                                            </div>
+                                            <div class="tech-card" style="padding: 0.5rem;">
+                                                <div class="badge badge-primary">NLP</div>
+                                            </div>
+                                            <div class="tech-card" style="padding: 0.5rem;">
+                                                <div class="badge badge-primary">Direito</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><strong>Experiência prática:</strong> Estágios em escritórios de LawTech ou projetos open source de IA jurídica</li>
+                                </ol>
+                                <p>Algumas instituições oferecem programas específicos:</p>
+                                <ul>
+                                    <li>MIT - Programa de IA e Direito</li>
+                                    <li>Stanford - Law and Computer Science</li>
+                                    <li>USP - Direito Digital e Sistemas Inteligentes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Não encontrou sua dúvida?</h3>
+                <div class="feature-card" style="text-align: center; max-width: 600px; margin: 0 auto;">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <h3>Entre em Contato</h3>
+                    <p>Nos envie sua pergunta e nossa equipe de especialistas responderá em até 24 horas.</p>
+                    <a href="#" class="btn btn-accent" id="contact-btn"><i class="fas fa-paper-plane"></i> Enviar Mensagem</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <!-- Rodapé permanece exatamente igual -->
-        <!-- ... -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3><i class="fas fa-robot"></i> Portal AJD</h3>
+                    <p>O futuro da justiça combina tecnologia avançada com princípios humanísticos para um sistema mais eficiente e acessível.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3><i class="fas fa-link"></i> Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#" class="nav-link" data-target="page-home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#" class="nav-link" data-target="page-sobre"><i class="fas fa-chevron-right"></i> Sobre o AJD</a></li>
+                        <li><a href="#" class="nav-link" data-target="page-carreira"><i class="fas fa-chevron-right"></i> Carreira</a></li>
+                        <li><a href="#" class="nav-link" data-target="page-academica"><i class="fas fa-chevron-right"></i> Jornada Acadêmica</a></li>
+                        <li><a href="#" class="nav-link" data-target="page-etica"><i class="fas fa-chevron-right"></i> Ética e Futuro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3><i class="fas fa-gavel"></i> Recursos Jurídicos</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Legislação sobre IA</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Ética Computacional</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Jurisprudência Digital</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Artigos Científicos</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Pesquisas e Estudos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3><i class="fas fa-envelope"></i> Contato</h3>
+                    <ul>
+                        <li><a href="mailto:contato@ajd.digital"><i class="fas fa-envelope"></i> contato@ajd.digital</a></li>
+                        <li><a href="#"><i class="fas fa-file-alt"></i> Relatar Problema</a></li>
+                        <li><a href="#"><i class="fas fa-handshake"></i> Parcerias</a></li>
+                        <li><a href="#"><i class="fas fa-briefcase"></i> Carreiras</a></li>
+                        <li><a href="#"><i class="fas fa-newspaper"></i> Imprensa</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Portal Agente Judiciário Digital. Todos os direitos reservados.</p>
+                <p>Desenvolvido com <i class="fas fa-heart" style="color: var(--accent-color);"></i> para um sistema judiciário mais humano e eficiente.</p>
+            </div>
+        </div>
     </footer>
 
     <!-- Modal de Contato -->
     <div class="modal" id="contact-modal">
-        <!-- Modal permanece exatamente igual -->
-        <!-- ... -->
-    </div>
-
-    <!-- VLibras - Acessibilidade -->
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2><i class="fas fa-envelope"></i> Entre em Contato</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="form-label">Assunto</label>
+                    <select id="subject" class="form-control" required>
+                        <option value="">Selecione...</option>
+                        <option value="duvida">Dúvida sobre o AJD</option>
+                        <option value="parceria">Parceria Comercial</option>
+                        <option value="imprensa">Assunto de Imprensa</option>
+                        <option value="carreira">Oportunidades de Carreira</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Mensagem</label>
+                    <textarea id="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-accent" style="width: 100%;">
+                    <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                </button>
+            </form>
         </div>
     </div>
-
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
 
     <script>
     // --- SCRIPT DE INTERATIVIDADE (JAVASCRIPT) ---
     document.addEventListener('DOMContentLoaded', function() {
-        // --- MENU MOBILE ---
-        const menuToggle = document.getElementById('menu-toggle');
-        const mainNav = document.getElementById('main-nav');
-        
-        menuToggle.addEventListener('click', function() {
-            mainNav.classList.toggle('show');
-        });
-        
-        // Fecha o menu ao clicar em um link
-        document.querySelectorAll('#main-nav a').forEach(link => {
-            link.addEventListener('click', function() {
-                mainNav.classList.remove('show');
-            });
-        });
-
         // --- NAVEGAÇÃO PRINCIPAL ---
         const navLinks = document.querySelectorAll('.nav-link');
         const pages = document.querySelectorAll('main section');
@@ -1464,10 +2360,25 @@
         if (!window.location.hash) {
             switchPage('page-home');
         }
-        
-        // Melhorias para touch devices
-        document.addEventListener('touchstart', function(){}, {passive: true});
     });
     </script>
+</body>
+</html>
+<html>
+<head>
+<title>Teste do VLibras</title>
+</head>
+
+<body>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 </body>
 </html>
